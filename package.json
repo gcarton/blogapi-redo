@@ -1,10 +1,11 @@
 {
-  "name": "blogapi",
+  "name": "blogapi-redo",
   "version": "1.0.0",
   "description": "BlogApi",
-  "main": "ls",
+  "main": "server.js",
   "scripts": {
-    "test": "mocha ./test"
+    "test": "mocha ./test",
+    "start":"node server.js"
   },
   "author": "",
   "license": "ISC",
