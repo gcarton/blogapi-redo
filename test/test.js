@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 
 describe('blogRouter', function(){
 
-	before (function(){
+	before(function(){
 		return runServer();
 	});
 
