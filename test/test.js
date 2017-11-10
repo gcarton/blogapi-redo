@@ -34,7 +34,7 @@ describe('Blog Router', function(){
 		});
 	});
 
-	it('should add an item on POST' function(){
+	it('should add an item on POST', function(){
 		const newItem = {title:'blogTest', content:'lorem ipsum', author:'paddy murphy', publishDate:'20/Nov/2018'};
 		return chai.request(app)
 		.post('/blogRouter')
