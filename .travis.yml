@@ -1,8 +1,8 @@
 language: node_js
 node_js: node
-deploy :
- app: thawing-beyond-38292
-provider: heroku
-api_key: f208de15-3137-4e33-8485-e4f1e41747b7
-  on:
-    repo: gcarton/blogapi-redo
+# deploy :
+#  app: thawing-beyond-38292
+# provider: heroku
+# api_key: f208de15-3137-4e33-8485-e4f1e41747b7
+#   on:
+#     repo: gcarton/blogapi-redo
