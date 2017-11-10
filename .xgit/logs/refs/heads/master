@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 fd891d4716f678d9a7daff99e6f9c812f639fe74 Ger Carton <gercarton.code@gmail.com> 1509030233 +0100	commit (initial): initial commit
-fd891d4716f678d9a7daff99e6f9c812f639fe74 5bfe0237577b7a4bd9995f642747e5e9fbd03681 Ger Carton <gercarton.code@gmail.com> 1509460278 +0000	commit: inital commit
-5bfe0237577b7a4bd9995f642747e5e9fbd03681 a06ffe8fd60db31fbe181aa2778e397ab361d6b4 Ger Carton <gercarton.code@gmail.com> 1510148779 +0000	commit: test
-a06ffe8fd60db31fbe181aa2778e397ab361d6b4 d92634f24bb8490a0f4959e6ee33c40934f60bbf Ger Carton <gercarton.code@gmail.com> 1510233471 +0000	commit: added test file and .travis.yml to all of CI Testing
