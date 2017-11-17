@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "cross-env process.env.PORT=9001 mocha ./test"
+    "test": " mocha"
   },
   "dependencies": {
     "body-parser": "^1.18.2",

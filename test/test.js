@@ -6,7 +6,7 @@ const should = chai.should();
 
 chai.use(chaiHttp);
 
-describe('blogRouter', function(){
+describe('BlogRouter', function(){
 
 	before(function(){
 		return runServer();
