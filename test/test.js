@@ -53,7 +53,7 @@ describe('BlogRouter', function(){
 			title:'blogTest',
 			content:'ipsum lorem',
 			author:'murphy paddy',
-			publishDate:'21/Now/2018'
+			publishDate:'21/Nov/2018'
 		};
 		return chai.request(app)
 		.get('/blog-posts')
