@@ -1,14 +1,15 @@
 {
   "name": "blogapi-redo",
   "version": "0.0.1",
-  "description": "Shopping list app to demo 'the modern classic'",
+  "description": "BlogApi",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha"
+    "test": "cross-env process.env.PORT=9000 mocha ./test"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "cross-env": "^5.1.1",
     "express": "^4.12.4",
     "morgan": "^1.7.0",
     "uuid": "^2.0.3"
