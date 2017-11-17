@@ -45,21 +45,24 @@ router.put('/:id', jsonParser, (req,res) => {
 			const message = `Missing \`${field}\` in request body`
 			console.error(message);
 			return res.status(400).send(message);
+			}
 		}
 
 	if (req.params.id !== req.body.id){
 		const message = (
-			`Request path id (${req.params.id}) and request body id` `($({req.body.id}\``);
+			`Request`);
 		console.error(message);
 		return res.status(400).send(message);
 	}
-	console.log(`Updating blog item \${req.params.id}\``);
+	console.log(`Updating the blog item \`${req.params.id}\``);
 	const updatedBlog = BlogPosts.update({
+		id: req.params.id,
 		title:req.params.title,
 		content:req.params.content,
-		ingredients:req.body.ingredients
+		author:req.body.author,
+		publishDate:req.body.publishDate
  });
   res.status(204).end();
-}});
+})
 
 module.exports = router;
