@@ -20,7 +20,7 @@ describe('BlogRouter', function(){
 
 	it('should list items on GET', function(){
 		return chai.request(app)
-		.get('/blogRouter')
+		.get('/blog-posts')
 		.then(function(res){
 			res.should.have.status(200);
 			res.should.be.json;
@@ -37,7 +37,7 @@ describe('BlogRouter', function(){
 	it('should add an item on POST', function(){
 		const newItem = {title:'blogTest', content:'lorem ipsum', author:'paddy murphy', publishDate:'20/Nov/2018'};
 		return chai.request(app)
-		.post('/blogRouter')
+		.post('/blog-posts')
 		.send(newItem)
 		.then(function(res){
 			res.should.be.json;
@@ -56,11 +56,11 @@ describe('BlogRouter', function(){
 			publishDate:'21/Now/2018'
 		};
 		return chai.request(app)
-		.get('/blogRouter')
+		.get('/blog-posts')
 		.then(function(res){
 			updateData.id=res.body[0].id;
 			return chai.request(app)
-				.put('/blogRouter/${updateData.id}')
+				.put('/blog-posts/${updateData.id}')
 				.send(updateData);
 		})	
 
@@ -71,10 +71,10 @@ describe('BlogRouter', function(){
 
 	it('should delete items on DELETE', function(){
 		return chai.request(app)
-		.get('/blogRouter')
+		.get('/blog-posts')
 		.then(function(res){
 			return chai.request(app)
-				.delete('/blogRouter/${res.body[0].id}');
+				.delete('/blog-posts/${res.body[0].id}');
 		})
 		.then(function(res){
 			res.should.have.status(204);
