@@ -1,8 +1,9 @@
 language: node_js
 node_js: node
-# deploy :
-#  app: thawing-beyond-38292
-# provider: heroku
-# api_key: f208de15-3137-4e33-8485-e4f1e41747b7
-#   on:
-#     repo: gcarton/blogapi-redo
+deploy:
+  provider: heroku
+  api_key:
+    secure: q5PZVkuSEIlVhAxErXyZVizuFV7+9dY7Y08K9G4Ieo4VVturzKNNsQE1UkwEnDgBAckUkVM2rpR69O3Ju1rUjrs8RXHtDq/zbA0nrN1mnZigITU8smv6ngLomjrVo9t5HGAyu3U+29YDL39l9pC4xvIy/pJLMe42V1ja98sPYD9dMPJJTdyHwLyEjLzmybOzi27rK8XhyPsFvJOHn5nhXJPjm4yDd5Sl2NEjUiH8K+oZ0ifUskv5ljAPAODOBrZQu87iGhvnN+Hix4DJQR9s9jfkecmBV6pZdslTZekONmWOMbpg9lGVAS+f8cAro6YY5CHZGZrFTQgcF+lahAme5C/tVt+y5MYEbm8DPeooIDCdU/7w0UbN78arok1RzYjiT6ZQCyPX5uQ39PrJ47FOVLdEdIC5r6r4UoZq9UJl1tYm6XEuyvC0pv1NKL85xYXKmgPz4BKgIm9XMuAWXPyXIPDJWy0APgjNSdFtwssXHotr1nSNuisHikYqxKbYEvKqBU69LdIc86UPV8b1O1fj2YRjz3zzJu0pfegHGAG0M1e7bUMsiQvg8MlWG9pPiMh5+A48UCQQ1NRFCUtq1Gtf5eDWL91CKyuHyHzvUa0Rt+eDVcrWBgkZTqTTWiX+uePNwjDx2SDN0lQo6b/JhpIF2DlgcrkjmpC7nmEtPAvRSSI=
+  app: blogapi-redo
+  on:
+    repo: gcarton/blogapi-redo
