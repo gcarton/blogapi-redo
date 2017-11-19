@@ -3,6 +3,9 @@ const app = express();
 const router = express.Router();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+mongoose.Promise = global.Promise;
 
 const blogRouter = require('./blogRouter');
 
