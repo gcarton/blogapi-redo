@@ -53,15 +53,15 @@ describe('BlogRouter', function(){
 			title:'blogTest',
 			content:'ipsum lorem',
 			author:'murphy paddy',
-			publishDate:'21/Nov/2018'
+			publishDate:"2017-01-01"
 		};
 		return chai.request(app)
 		.get('/blog-posts')
 		.then(function(res){
 			updateData.id=res.body[0].id;
 			return chai.request(app)
-				.put('/blog-posts/${updateData.id}')
-				.send(updateData);
+				.put(`/blog-posts/${updateData.id}`)
+				.send(updateData)
 		})	
 
 		.then(function(res){
