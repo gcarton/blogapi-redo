@@ -42,7 +42,6 @@ function runServer(databaseUrl=DATABASE_URL, port=PORT) {
       reject(err)
     });
   });
-  });
 }
 
 // like `runServer`, this function also needs to return a promise.
