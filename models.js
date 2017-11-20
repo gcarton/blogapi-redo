@@ -15,6 +15,15 @@ function StorageException(message) {
    this.name = "StorageException";
 }
 
+const mongoose = require('mongoose');
+
+const blogapiSchema = mongoose.Schema({
+  title: {type: String, required: true},
+  content:{type: String, required:true},
+  author:{type: String, required: true},
+  publishDate:{type: String, required: true}
+});
+
 const BlogPosts = {
   create: function(title, content, author, publishDate) {
     const post = {
